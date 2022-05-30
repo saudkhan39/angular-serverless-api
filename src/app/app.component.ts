@@ -12,16 +12,12 @@ export class AppComponent implements OnInit {
   title = 'Get API';
   user: any;
 
- 
-
   constructor(private userData: CoursesService) {
 
     userData.user().subscribe((data) => {
       console.log('data : ', data)
       this.user = data;
-    })
-
-   
+    })   
   
   }
   getFormUserData(data: any) {
