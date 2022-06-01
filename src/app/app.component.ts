@@ -11,7 +11,6 @@ import { CoursesService } from './courses.service';
 export class AppComponent implements OnInit {
   title = 'Get API';
   user: any;
-
   constructor(private userData: CoursesService) {
 
     userData.user().subscribe((data) => {
